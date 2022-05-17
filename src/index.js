@@ -1,8 +1,8 @@
+import { css, Global } from '@emotion/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Global, css } from '@emotion/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,11 +10,17 @@ root.render(
     <Global
       styles={css`
         body {
+          display: flex;
           margin: 0;
-          font-family: 'Inter', sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
+          min-height: 100%;
+          min-width: 100%;
+          background-color: #fff;
+          padding: 0;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+          line-height: 20px;
         }
+
         *,
         ::before,
         ::after {
